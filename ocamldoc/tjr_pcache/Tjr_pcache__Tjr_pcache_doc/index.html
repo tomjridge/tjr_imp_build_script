@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Tjr_pcache__Tjr_pcache_doc (tjr_pcache.Tjr_pcache__Tjr_pcache_doc)</title><link rel="stylesheet" href="../../odoc.css"/><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><meta name="generator" content="doc-ock-html v1.0.0-1-g1fc9bf0"/></head><body><nav id="top"><a href="../index.html">Up</a> &mdash; <span class="package">package <a href="../index.html">tjr_pcache</a></span></nav><header><h1><span class="keyword">Module</span> <span class="module-path">Tjr_pcache__Tjr_pcache_doc</span></h1></header><p>Main documentation entry point for <code class="code">tjr_pcache</code></p><h2>Introduction</h2><p>This library implements a persistent cache (pcache), i.e., an on-disk
+cache. This should be used with <code class="code">tjr_btree</code> to reduce the writes going
+to the B-tree.</p><h2>Ancestor projects</h2><p>This library depends on <code class="code">tjr_btree</code> (the GOM -- module Gom -- is
+built on top of the B-tree and the pcache).</p><h2>Persistent list</h2><p>The module Persistent_list implements a persistent list. This is a
+singly-linked on-disk list. The main function is
+<span class="xref-unresolved" title="unresolved reference to &quot;Persistent_list.make_persistent_list&quot;">Persistent_list.make_persistent_list</span>.</p><h2>Persistent chunked list</h2><p>The module Persistent_chunked_list refines persistent list, by
+exposing that multiple items may be stored in a single block.</p><h2>Detachable chunked list</h2><p>The module Detachable_chunked_list provides the functionality we need from
+the persistent cache, including the detach operation. The main
+function is <span class="xref-unresolved" title="unresolved reference to &quot;Detachable_chunked_list.make_plog_ops&quot;">Detachable_chunked_list.make_plog_ops</span>.</p></body></html>
