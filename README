@@ -1,0 +1,4 @@
+The Makefile simply checks out all (most!) ImpFS repos and builds them
+with dune.
+
+The command `make with_docker` will attempt to use Docker. 
