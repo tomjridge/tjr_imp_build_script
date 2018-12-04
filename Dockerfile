@@ -10,7 +10,7 @@ RUN sudo apt-get install -y sudo
 RUN sudo apt-get install -y unzip m4
 
 # update opam-repository
-RUN cd /home/opam/opam-repository && git pull
+RUN cd /home/opam/opam-repository && git pull --quiet
 RUN opam update
 RUN opam install -y dune
 RUN opam install -y bos core dune extlib extunix fileutils lwt num ocamlfind omd ppx_bin_prot ppx_deriving_yojson yojson # ocamlfuse
