@@ -18,9 +18,13 @@ build:
 doc:
 	dune build @doc
 
+DOCROOT:=_build/default/_doc/_html
+copy_doc:
+	rm -rf docs/*
+	cp -R $(DOCROOT)/* docs
 
 view_doc:
-	google-chrome  _build/default/_doc/_html/index.html
+	google-chrome  $(DOCROOT)/index.html
 
 
 clean:
