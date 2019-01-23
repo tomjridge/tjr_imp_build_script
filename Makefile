@@ -4,6 +4,7 @@ NAME:=xxx
 all:
 	$(MAKE) clone
 	$(MAKE) build
+	$(MAKE) doc
 
 clone:
 	for f in `cat repos.txt`; do git clone https://github.com/tomjridge/$$f.git; done
