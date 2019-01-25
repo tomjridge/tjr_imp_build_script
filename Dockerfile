@@ -13,7 +13,7 @@ RUN sudo apt-get install -y unzip m4
 RUN cd /home/opam/opam-repository && git pull --quiet
 RUN opam update
 RUN opam install -y dune
-RUN opam install -y bos core dune extlib extunix fileutils lwt num ocamlfind omd ppx_bin_prot ppx_deriving_yojson yojson odoc # ocamlfuse
+RUN opam install -y bos core dune extlib extunix fileutils lwt num ocamlfind omd ppx_bin_prot ppx_deriving_yojson yojson odoc oseq # ocamlfuse
 COPY Makefile repos.txt /home/opam/tmp/
 # RUN sudo chmod -R ugo+r /home/opam/tmp/*
 RUN sudo chown -R opam:opam /home/opam/tmp
