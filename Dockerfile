@@ -1,4 +1,4 @@
-FROM ocaml/opam2-staging
+FROM ocaml/opam2
 
 # various apt pacakges that may or may not be needed
 RUN sudo apt-get install -y git make
