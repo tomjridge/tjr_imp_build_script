@@ -14,8 +14,10 @@ clone:
 # git clone -b dev https://github.com/tomjridge/tjr_btree.git
 
 
+SUBDIRS:=tjr_lib tjr_monad tjr_profile tjr_fs_shared isa_btree tjr_btree tjr_lru_cache tjr_mem_queue tjr_net tjr_pcache tjr_kv
 build:
-	$(DUNE) build @install
+	for f in $(SUBDIRS); do make -C $$f clean && make -C $$f build && make -C $$f install; done
+#	$(DUNE) build @install
 
 
 SRC:=_build/default/_doc/_html
