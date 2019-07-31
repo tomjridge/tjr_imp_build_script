@@ -3,4 +3,4 @@ services:
   - docker
 
 script:
-  - make with_docker
+  - docker build .
